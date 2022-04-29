@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "buffer": "^6.0.3",
+    "cross-env": "^5.2.1",
+    "laravel-mix": "^6.0.43",
+    "lodash": "^4.17.13",
+    "process": "^0.11.10",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "annyang": "^2.6.1",
+    "cropperjs": "^1.5.11",
+    "dropzone": "^5.8.1",
+    "fuse.js": "^6.4.6",
+    "idb-keyval": "^5.0.4",
+    "keycode": "^2.2.0",
+    "lottie-web": "^5.7.6",
+    "music-metadata-browser": "^2.2.6",
+    "plyr": "^3.6.4",
+    "vue": "^2.6.12",
+    "vue-awesome": "^4.1.0",
+    "vue-clipboard2": "^0.3.1",
+    "vue-focuspoint-component": "^2.0.1",
+    "vue-image-compare2": "^1.0.0",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-input-autowidth": "^1.0.11",
+    "vue-ls": "^3.2.2",
+    "vue-notif": "^2.0.0",
+    "vue-tippy": "v2",
+    "vue-touch": "^2.0.0-beta.4",
+    "vue2-filters": "^0.12.0",
+    "yarn": "^1.22.10"
+  },
+  "name": "maglobal",
+  "description": "Simple project to manage appointments for companies like beauty salon, medical clinic or car repair shop.",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

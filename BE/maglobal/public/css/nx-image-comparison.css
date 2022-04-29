@@ -1,0 +1,200 @@
+
+/*nx image conprisum */
+.nx-image-comprison-container {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	
+}
+
+
+.nx-image-comparison{
+	z-index: 3;
+}
+
+.nx-image-comprison-container *{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.nx-image-comprison-container img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.nx-image-comprison-container .nx-before-image {
+    z-index: 20;
+	clip: rect(0px, 324px, 360px, 0px);
+}
+
+.nx-image-comprison-container .nx-after-image {
+    z-index: 10;
+	clip: rect(0px, 540px, 360px, 324px);
+}
+
+
+.nx-image-comprison-container .nx-img-control-slider {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #FFFFFF;
+}
+
+.nx-image-comprison-container.vertical-style .nx-before-text{
+	top: 0%;
+	left: 43%;
+}
+
+.nx-image-comprison-container.vertical-style .nx-rotate-text .nx-before-text {
+	top: 3%;
+	transform: rotate(270deg);
+	left: 44%;
+}
+
+
+.nx-image-comprison-container.vertical-style .nx-after-text{
+	left: auto;
+	right: 45%;
+	bottom: 0px;
+	top: auto;
+}
+
+.nx-image-comprison-container.vertical-style .nx-rotate-text .nx-after-text {
+	bottom: 2%;
+	transform: rotate(270deg);
+	right: 45.5%;
+}
+
+.nx-image-comprison-container .nx-img-control-slider {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    border: 3px solid white;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    z-index: 40;
+    cursor: pointer;
+}
+
+.nx-image-comprison-container .nx-img-control-slider > span.default {
+	border: 0px;
+	margin: auto;
+	top: 6px;
+	position: absolute;
+	width: 10px;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.nx-img-control-slider .nx-icon-before.default {
+	left: 3px;
+	line-height: 1.5em;
+}
+
+.nx-img-control-slider .nx-icon-before.default:before{
+	content: "-";
+}
+
+.nx-img-control-slider.nx-vertical-style .nx-icon-before.default{
+	left: 16px;
+	top: -9px;
+}
+
+.nx-img-control-slider .nx-icon-after.default {
+   right: 3px;
+}
+
+.nx-img-control-slider .nx-icon-after.default:before{
+	content: "+";
+}
+
+.nx-img-control-slider.nx-vertical-style .nx-icon-after.default{
+	left: 4px;
+	top: 17px;
+}
+
+.nx-image-comprison-container .nx-before-text, .nx-image-comprison-container .nx-after-text{
+	position: absolute;
+	top: 47%;
+	z-index: 999;
+	padding: 0px 10px;
+	background-color: #FFF;
+	color: #656565;
+}
+
+.nx-image-comprison-container .nx-before-text{
+	left: 0px;
+}
+
+
+.nx-image-comprison-container .nx-after-text{
+	right: 0px;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-vertical-style::after, .nx-image-comprison-container .nx-img-control-slider.nx-vertical-style::before {
+	position: absolute;
+	content: '';
+	width: 9999px;
+	max-width: inherit;
+	background-color: #FFFFFF;
+	height: 3px;
+	top: 18px;
+	z-index: 2;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-vertical-style:after{
+	right: 50%;
+	margin-right: 22px;
+}
+
+.nx-image-comprison-container.nx-round-style .nx-img-control-slider.nx-vertical-style:after{
+	right: 50%;
+	margin-right: 20px;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-vertical-style::before {
+	left: 50%;
+	margin-left: 22px;
+}
+
+.nx-image-comprison-container.nx-round-style .nx-img-control-slider.nx-vertical-style::before {
+	left: 50%;
+	margin-left: 20px;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-horizontal-style::after, .nx-image-comprison-container .nx-img-control-slider.nx-horizontal-style::before {
+	position: absolute;
+	content: '';
+	width: 3px;
+	background-color: #FFFFFF;
+	height: 9999px;
+	z-index: 2;
+	left: 17px;
+	min-height: auto;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-horizontal-style:after{
+	top: 50%;
+	margin-top: 22px;
+}
+
+.nx-image-comprison-container .nx-img-control-slider.nx-horizontal-style:before{
+	bottom: 50%;
+	margin-bottom: 20px;
+}
+
